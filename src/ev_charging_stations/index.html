@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EV Charging Stations Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #3498db;
+            --primary-dark: #2980b9;
+            --secondary: #2c3e50;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+
+        h1 {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-section {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 40px;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-input-container {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        .search-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            padding: 0 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .search-btn:active {
+            transform: translateY(0);
+        }
+
+        .results-section {
+            margin-bottom: 40px;
+        }
+
+        .results-header {
+            margin-bottom: 20px;
+        }
+
+        .results-count {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .stations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .station-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .station-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            padding: 20px;
+            background: var(--secondary);
+            color: white;
+            position: relative;
+        }
+
+        .station-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .station-provider {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .favorite-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .favorite-btn:hover {
+            color: #ffd700;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .station-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .detail-icon {
+            width: 30px;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .detail-content {
+            flex: 1;
+        }
+
+        .detail-label {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 3px;
+        }
+
+        .detail-value {
+            font-weight: 600;
+        }
+
+        .sentiment {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .stars {
+            color: #ffc107;
+        }
+
+        .reviews-count {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(52, 152, 219, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 15px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: var(--gray);
+        }
+
+        .no-results-icon {
+            font-size: 3rem;
+            color: var(--light-gray);
+            margin-bottom: 15px;
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 20px;
+            background: #f8d7da;
+            color: #721c24;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .search-form {
+                flex-direction: column;
+            }
+            
+            .search-btn {
+                padding: 16px;
+                justify-content: center;
+            }
+            
+            .stations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-charging-station logo-icon"></i>
+                <h1>EV Charging Stations Finder</h1>
+            </div>
+            <p class="subtitle">Find the perfect charging station for your electric vehicle with our intelligent search</p>
+        </header>
+
+        <section class="search-section">
+            <form class="search-form" id="queryForm">
+                <div class="search-input-container">
+                    <input type="text" id="userQuestion" class="search-input" placeholder="Ask for charging stations near you, by speed, availability..." />
+                </div>
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <div class="results-header">
+                <div class="results-count">Found <span id="resultsCount">0</span> stations</div>
+            </div>
+            <div id="results" class="stations-grid">
+                <!-- Results will be populated here -->
+            </div>
+        </section>
+
+        <footer>
+            <p>EV Charging Stations Finder &copy; 2023 | Powered by AI Technology</p>
+        </footer>
+    </div>
+
+    <script>
+        const form = document.getElementById("queryForm");
+        const resultsDiv = document.getElementById("results");
+        const resultsCount = document.getElementById("resultsCount");
+
+        // Form submission handler
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const question = document.getElementById("userQuestion").value.trim();
+            if (!question) return;
+
+            resultsDiv.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Searching for charging stations...</p>
+                </div>
+            `;
+
+            try {
+                const response = await fetch("/process", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ 
+                        query: question, 
+                        file_name: "unused.txt"  // or any dummy value
+                    }),
+                });
+
+                if (!response.ok) throw new Error("API error");
+
+                const data = await response.json();
+
+                if (data?.model_output?.length === 0) {
+                    resultsDiv.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-map-marker-alt no-results-icon"></i>
+                            <h3>No stations found</h3>
+                            <p>Try adjusting your search criteria or location</p>
+                        </div>
+                    `;
+                    resultsCount.textContent = "0";
+                    return;
+                }
+
+                // Update results count
+                resultsCount.textContent = data?.model_output?.length || "0";
+                
+                // Clear previous results
+                resultsDiv.innerHTML = "";
+                
+                // Add station cards
+                data?.model_output?.forEach((station) => {
+                    const card = document.createElement("div");
+                    card.className = "station-card";
+                    
+                    // Generate star rating
+                    const rating = station.avg_sentiment || 0;
+                    const stars = generateStars(rating);
+                    
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <h2 class="station-name">${station.location_name}</h2>
+                            <p class="station-provider">${station.provider}</p>
+                            <button class="favorite-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="station-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">CHARGING SPEED</div>
+                                    <div class="detail-value">${station.charging_speed}</div>
+                                </div>
+                            </div>
+                            <div class="station-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-plug"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">CHARGING TYPE</div>
+                                    <div class="detail-value">${station.charging_types}</div>
+                                </div>
+                            </div>
+                            <div class="station-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-wheelchair"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">ACCESSIBILITY</div>
+                                    <div class="detail-value">${station.accessibility}</div>
+                                </div>
+                            </div>
+                            <div class="station-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-car-battery"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">AVAILABLE CHARGERS</div>
+                                    <div class="detail-value">${station.available_chargers}</div>
+                                </div>
+                            </div>
+                            <div class="station-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">USER RATING</div>
+                                    <div class="detail-value sentiment">
+                                        <span class="stars">${stars}</span>
+                                        <span>${rating}/5</span>
+                                        <span class="reviews-count">(${station.num_reviews || 0} reviews)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="station-detail">
+                                <div class="detail-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="detail-content">
+                                    <div class="detail-label">OPERATING HOURS</div>
+                                    <div class="detail-value">${station.operating_hours}</div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    resultsDiv.appendChild(card);
+                });
+            } catch (err) {
+                resultsDiv.innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Error: ${err.message}</p>
+                    </div>
+                `;
+                resultsCount.textContent = "0";
+                console.error(err);
+            }
+        });
+
+        // Helper function to generate star rating
+        function generateStars(rating) {
+            rating=rating*5
+            const fullStars = Math.floor(rating);
+            const halfStar = rating % 1 >= 0.5;
+            const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+            
+            let stars = '';
+            
+            // Full stars
+            for (let i = 0; i < fullStars; i++) {
+                stars += '<i class="fas fa-star"></i>';
+            }
+            
+            // Half star
+            if (halfStar) {
+                stars += '<i class="fas fa-star-half-alt"></i>';
+            }
+            
+            // Empty stars
+            for (let i = 0; i < emptyStars; i++) {
+                stars += '<i class="far fa-star"></i>';
+            }
+            
+            return stars;
+        }
+    </script>
+</body>
+</html>

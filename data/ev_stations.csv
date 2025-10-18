@@ -1,0 +1,151 @@
+Station ID,Provider,Location Name,Latitude,Longitude,Charging Speed,Available Chargers,Charging Types,Accessibility,Operating Hours
+1001,ChargeCo,Downtown Station,40.7128,-74.0060,Fast,4,Type 2,Public,24/7
+1002,PowerGrid,Central Park Station,40.7851,-73.9683,Supercharger,2,DC Fast Charge,Public,06:00 - 22:00
+1003,EVNow,Riverside Charging,34.0522,-118.2437,Fast,3,Type 1,Restricted,09:00 - 18:00
+1004,Electra,Eastside Charging,34.0520,-118.2500,Supercharger,4,DC Fast Charge,Public,24/7
+1005,VoltHub,Sunset Boulevard,34.0699,-118.4050,Fast,2,Type 2,Restricted,07:00 - 20:00
+1006,PowerGrid,Hollywood Station,34.0928,-118.3287,Supercharger,5,DC Fast Charge,Public,24/7
+1007,ChargeCo,Beverly Hills,34.0695,-118.4053,Fast,3,Type 2,Public,06:00 - 22:00
+1008,EVNow,Pacific Station,33.7485,-118.2487,Fast,2,Type 1,Public,08:00 - 20:00
+1009,Electra,Santa Monica,34.0194,-118.4957,Supercharger,6,DC Fast Charge,Public,24/7
+1010,VoltHub,Venice Beach,33.9850,-118.4695,Fast,4,Type 2,Restricted,06:00 - 22:00
+1011,PowerGrid,Silver Lake,34.0900,-118.2742,Fast,2,Type 1,Public,24/7
+1012,ChargeCo,Los Angeles Station,34.0527,-118.2437,Supercharger,3,DC Fast Charge,Public,06:00 - 20:00
+1013,EVNow,Wilshire Boulevard,34.0675,-118.4340,Fast,4,Type 2,Restricted,08:00 - 18:00
+1014,Electra,Century City,34.0694,-118.4154,Supercharger,5,DC Fast Charge,Public,24/7
+1015,VoltHub,LAX Airport,33.9416,-118.4085,Fast,6,Type 2,Public,24/7
+1016,ChargeCo,West Hollywood,34.0906,-118.3792,Fast,2,Type 1,Restricted,07:00 - 19:00
+1017,PowerGrid,Glendale Station,34.1425,-118.2551,Supercharger,3,DC Fast Charge,Public,08:00 - 22:00
+1018,EVNow,Culver City,33.9934,-118.3985,Fast,4,Type 2,Public,24/7
+1019,Electra,Pasadena Station,34.1462,-118.1445,Supercharger,5,DC Fast Charge,Public,06:00 - 20:00
+1020,VoltHub,Long Beach,33.7682,-118.1951,Fast,2,Type 1,Restricted,09:00 - 18:00
+1021,ChargeCo,Compton,33.8958,-118.2200,Fast,4,Type 2,Public,24/7
+1022,PowerGrid,Inglewood,33.9564,-118.3526,Supercharger,3,DC Fast Charge,Public,08:00 - 22:00
+1023,EVNow,Carson City,33.8327,-118.2203,Fast,5,Type 2,Public,24/7
+1024,Electra,Torrance Station,33.8358,-118.3402,Supercharger,6,DC Fast Charge,Public,24/7
+1025,VoltHub,South Bay,33.8666,-118.3727,Fast,4,Type 2,Restricted,07:00 - 20:00
+1026,ChargeCo,London Bridge,51.5074,-0.1278,Fast,4,Type 2,Public,24/7
+1027,PowerGrid,Paris Gare du Nord,48.8817,2.3550,Supercharger,2,DC Fast Charge,Public,06:00 - 22:00
+1028,EVNow,Berlin Hauptbahnhof,52.5200,13.4050,Fast,5,Type 2,Public,08:00 - 20:00
+1029,Electra,Amsterdam Centraal,52.3779,4.8970,Supercharger,3,DC Fast Charge,Public,24/7
+1030,VoltHub,Madrid Atocha,40.4074,-3.6920,Fast,4,Type 2,Restricted,06:00 - 22:00
+1031,ChargeCo,Barcelona Sants,41.3745,2.1580,Supercharger,5,DC Fast Charge,Public,24/7
+1032,PowerGrid,London King's Cross,51.5300,-0.1235,Fast,6,Type 2,Public,24/7
+1033,EVNow,Budapest Keleti,47.7895,19.0773,Supercharger,2,DC Fast Charge,Public,06:00 - 22:00
+1034,Electra,Zurich Hauptbahnhof,47.3784,8.5400,Fast,4,Type 2,Restricted,09:00 - 18:00
+1035,VoltHub,Paris Charles de Gaulle,49.0097,2.5477,Supercharger,3,DC Fast Charge,Public,24/7
+1036,ChargeCo,Frankfurt Main Station,50.1109,8.6821,Fast,4,Type 2,Public,06:00 - 20:00
+1037,PowerGrid,Brussels Central,50.8467,4.3499,Supercharger,2,DC Fast Charge,Public,08:00 - 22:00
+1038,EVNow,Stockholm Central,59.3293,18.0686,Fast,5,Type 2,Public,07:00 - 19:00
+1039,Electra,Oslo Central Station,59.9113,10.7437,Supercharger,4,DC Fast Charge,Public,24/7
+1040,VoltHub,Rome Termini,41.9013,12.4958,Fast,3,Type 1,Restricted,06:00 - 22:00
+1041,ChargeCo,Amsterdam Schiphol,52.3105,4.7683,Supercharger,6,DC Fast Charge,Public,24/7
+1042,PowerGrid,Vienna Hauptbahnhof,48.1900,16.3705,Fast,4,Type 2,Public,08:00 - 22:00
+1043,EVNow,Munich Hauptbahnhof,48.1351,11.5820,Supercharger,3,DC Fast Charge,Public,24/7
+1044,Electra,Copenhagen Central,55.6761,12.5683,Fast,5,Type 2,Restricted,06:00 - 20:00
+1045,VoltHub,Lisbon Oriente,38.7676,-9.1006,Supercharger,2,DC Fast Charge,Public,24/7
+1046,ChargeCo,Prague Main Station,50.0878,14.4208,Fast,4,Type 2,Public,07:00 - 19:00
+1047,PowerGrid,Bratislava,48.1482,17.1067,Supercharger,3,DC Fast Charge,Public,06:00 - 22:00
+1048,EVNow,Bucharest Gara de Nord,44.4405,26.1043,Fast,6,Type 2,Public,08:00 - 20:00
+1049,Electra,Florence Santa Maria Novella,43.7765,11.2470,Supercharger,5,DC Fast Charge,Public,24/7
+1050,VoltHub,Athens Syntagma,37.9838,23.7275,Fast,3,Type 1,Restricted,06:00 - 22:00
+1051,ChargeCo,Helsinki Central Station,60.1699,24.9384,Supercharger,4,DC Fast Charge,Public,24/7
+1052,PowerGrid,London Paddington,51.5155,-0.1745,Fast,4,Type 2,Public,24/7
+1053,EVNow,Berlin Alexanderplatz,52.5219,13.4132,Supercharger,5,DC Fast Charge,Public,06:00 - 20:00
+1054,Electra,Prague Andel,50.0737,14.4100,Fast,2,Type 2,Restricted,09:00 - 18:00
+1055,VoltHub,Zurich Oerlikon,47.4082,8.5501,Supercharger,6,DC Fast Charge,Public,24/7
+1056,ChargeCo,Milan Centrale,45.4841,9.2047,Fast,3,Type 1,Public,08:00 - 20:00
+1057,PowerGrid,Oslo Nationaltheatret,59.9156,10.7345,Supercharger,4,DC Fast Charge,Public,06:00 - 22:00
+1058,EVNow,Rome Tiburtina,41.8975,12.5169,Fast,5,Type 2,Public,07:00 - 20:00
+1059,Electra,Barcelona Passeig de Gracia,41.3964,2.1616,Supercharger,3,DC Fast Charge,Public,24/7
+1060,VoltHub,Paris Montparnasse,48.8400,2.3220,Fast,4,Type 2,Restricted,06:00 - 22:00
+1061,ChargeCo,Brussels Gare du Midi,50.8350,4.3410,Supercharger,2,DC Fast Charge,Public,24/7
+1062,PowerGrid,Berlin Zoo Station,52.5076,13.3372,Fast,5,Type 1,Restricted,08:00 - 18:00
+1063,EVNow,Stockholm Odenplan,59.3424,18.0500,Supercharger,4,DC Fast Charge,Public,06:00 - 22:00
+1064,Electra,Madrid Chamartín,40.4634,-3.6867,Fast,2,Type 2,Public,24/7
+1065,VoltHub,Vienna Westbahnhof,48.1894,16.3257,Supercharger,3,DC Fast Charge,Public,08:00 - 20:00
+1066,ChargeCo,Zurich Stadelhofen,47.3715,8.5407,Fast,4,Type 2,Restricted,06:00 - 22:00
+1067,PowerGrid,Helsinki Pasila,60.9205,24.9353,Supercharger,5,DC Fast Charge,Public,24/7
+1068,EVNow,Oslo Majorstuen,59.9292,10.7247,Fast,3,Type 1,Restricted,07:00 - 19:00
+1069,Electra,Budapest Nyugati,47.5189,19.0546,Supercharger,4,DC Fast Charge,Public,24/7
+1070,VoltHub,London Victoria,51.4916,-0.1431,Fast,6,Type 2,Public,08:00 - 22:00
+1071,ChargeCo,Tokyo Shibuya,35.6581,139.7017,Fast,4,Type 2,Public,24/7
+1072,PowerGrid,Beijing Wangfujing,39.9153,116.4032,Supercharger,3,DC Fast Charge,Public,06:00 - 22:00
+1073,EVNow,Seoul Station,37.5554,126.9707,Fast,5,Type 2,Public,07:00 - 19:00
+1074,Electra,Shanghai People's Square,31.2304,121.4737,Supercharger,4,DC Fast Charge,Public,24/7
+1075,VoltHub,Delhi Connaught Place,28.6358,77.2249,Fast,6,Type 2,Restricted,06:00 - 22:00
+1076,ChargeCo,Singapore Marina Bay,1.2833,103.8600,Supercharger,3,DC Fast Charge,Public,24/7
+1077,PowerGrid,Bangkok Siam Square,13.7464,100.5348,Fast,4,Type 2,Public,08:00 - 20:00
+1078,EVNow,Manila Bonifacio High Street,14.5567,121.0437,Supercharger,2,DC Fast Charge,Public,24/7
+1079,Electra,Jakarta Sudirman,6.2088,106.8456,Fast,5,Type 1,Restricted,07:00 - 19:00
+1080,VoltHub,Hong Kong Kowloon,22.3193,114.1694,Supercharger,4,DC Fast Charge,Public,06:00 - 22:00
+1081,ChargeCo,Tokyo Ueno,35.7116,139.7770,Fast,6,Type 2,Public,24/7
+1082,PowerGrid,Seoul Gangnam,37.4979,127.0276,Supercharger,3,DC Fast Charge,Public,08:00 - 20:00
+1083,EVNow,Beijing Tiananmen Square,39.9026,116.3972,Fast,5,Type 2,Restricted,06:00 - 22:00
+1084,Electra,Kyoto Station,35.0116,135.7681,Supercharger,4,DC Fast Charge,Public,24/7
+1085,VoltHub,Ho Chi Minh City Ben Thanh,10.7626,106.6959,Fast,3,Type 1,Restricted,08:00 - 20:00
+1086,ChargeCo,Bangkok Chatuchak,13.8228,100.5532,Supercharger,5,DC Fast Charge,Public,24/7
+1087,PowerGrid,Jakarta Kuningan,6.2233,106.8204,Fast,4,Type 2,Public,06:00 - 22:00
+1088,EVNow,Manila Makati,14.5547,121.0244,Supercharger,2,DC Fast Charge,Public,24/7
+1089,Electra,Shanghai Nanjing Road,31.2333,121.4769,Fast,6,Type 2,Restricted,08:00 - 20:00
+1090,VoltHub,Hanoi Hoan Kiem,21.0285,105.8542,Supercharger,3,DC Fast Charge,Public,24/7
+1091,ChargeCo,Mumbai Nariman Point,18.9250,72.8180,Fast,4,Type 2,Public,06:00 - 20:00
+1092,PowerGrid,Seoul Incheon Airport,37.4656,126.4500,Supercharger,5,DC Fast Charge,Public,24/7
+1093,EVNow,Bangkok Suvarnabhumi,13.6892,100.7503,Fast,3,Type 2,Public,07:00 - 19:00
+1094,Electra,Singapore Orchard Road,1.3016,103.8304,Supercharger,4,DC Fast Charge,Public,24/7
+1095,VoltHub,Delhi Indira Gandhi Airport,28.5562,77.0993,Fast,6,Type 2,Restricted,06:00 - 22:00
+1096,ChargeCo,Tokyo Akihabara,35.6996,139.7745,Supercharger,2,DC Fast Charge,Public,08:00 - 20:00
+1097,PowerGrid,Manila Quezon City,14.6481,121.0324,Fast,5,Type 2,Public,06:00 - 22:00
+1098,EVNow,Seoul Seoul Station,37.5550,126.9701,Supercharger,3,DC Fast Charge,Public,24/7
+1099,Electra,Bangkok Don Mueang,13.9131,100.6032,Fast,4,Type 2,Restricted,07:00 - 19:00
+1100,VoltHub,Shanghai Hongqiao,31.1944,121.3361,Supercharger,5,DC Fast Charge,Public,24/7
+1101,ChargeCo,Cairo Tahrir Square,30.0444,31.2357,Fast,4,Type 2,Public,24/7
+1102,PowerGrid,Lagos Lekki,6.5244,3.4200,Supercharger,3,DC Fast Charge,Public,06:00 - 22:00
+1103,EVNow,Nairobi Westlands,1.2835,36.8165,Fast,5,Type 2,Restricted,07:00 - 19:00
+1104,Electra,Johannesburg Sandton,26.1063,28.0341,Supercharger,4,DC Fast Charge,Public,24/7
+1105,VoltHub,Durban Gateway,29.8587,31.0218,Fast,3,Type 2,Public,06:00 - 20:00
+1106,ChargeCo,Accra Osu,5.5600,-0.2050,Supercharger,2,DC Fast Charge,Public,24/7
+1107,PowerGrid,Addis Ababa Bole,9.0320,38.7461,Fast,4,Type 2,Public,08:00 - 20:00
+1108,EVNow,Cape Town Waterfront,33.9072,18.4232,Supercharger,5,DC Fast Charge,Public,24/7
+1109,Electra,Abuja Central,9.0575,7.4951,Fast,3,Type 2,Restricted,06:00 - 22:00
+1110,VoltHub,Johannesburg Rosebank,26.1340,28.0311,Supercharger,6,DC Fast Charge,Public,24/7
+1111,ChargeCo,Lagos Victoria Island,6.4281,3.4214,Fast,4,Type 2,Public,07:00 - 19:00
+1112,PowerGrid,Accra Kotoka Airport,5.6052,-0.1659,Supercharger,3,DC Fast Charge,Public,24/7
+1113,EVNow,Nairobi Nairobi CBD,1.2867,36.8172,Fast,5,Type 2,Public,06:00 - 22:00
+1114,Electra,Cairo Airport,30.1217,31.4050,Supercharger,4,DC Fast Charge,Public,24/7
+1115,VoltHub,Dar es Salaam Mbezi,6.6931,39.2741,Fast,3,Type 2,Restricted,08:00 - 18:00
+1116,ChargeCo,Accra Tema,5.5897,-0.0351,Supercharger,2,DC Fast Charge,Public,06:00 - 22:00
+1117,PowerGrid,Lusaka,15.3875,28.3223,Fast,4,Type 2,Public,24/7
+1118,EVNow,Johannesburg Midrand,25.9923,28.1366,Supercharger,3,DC Fast Charge,Public,06:00 - 22:00
+1119,Electra,Cape Town Stellenbosch,33.9313,18.8606,Fast,5,Type 2,Restricted,07:00 - 19:00
+1120,VoltHub,Nairobi Jomo Kenyatta,1.3192,36.9273,Supercharger,4,DC Fast Charge,Public,24/7
+1121,ChargeCo,Abuja Wuse,9.0582,7.4953,Fast,6,Type 2,Public,08:00 - 20:00
+1122,PowerGrid,Harare,17.8292,31.0522,Supercharger,3,DC Fast Charge,Public,06:00 - 22:00
+1123,EVNow,Lusaka Airport,15.3306,28.4523,Fast,4,Type 2,Public,07:00 - 19:00
+1124,Electra,Durban Umhlanga,29.7406,31.0753,Supercharger,2,DC Fast Charge,Public,24/7
+1125,VoltHub,Windhoek,22.5597,17.0832,Fast,5,Type 2,Restricted,08:00 - 20:00
+1126,ChargeCo,Cape Town CBD,33.9249,18.4232,Supercharger,3,DC Fast Charge,Public,24/7
+1127,PowerGrid,Johannesburg Eastgate,26.1890,28.0671,Fast,6,Type 2,Public,08:00 - 22:00
+1128,EVNow,Addis Ababa,9.0246,38.7469,Supercharger,4,DC Fast Charge,Public,24/7
+1129,Electra,Lagos Ikeja,6.5956,3.3518,Fast,3,Type 1,Restricted,06:00 - 22:00
+1130,VoltHub,Port Louis,20.1605,57.5045,Supercharger,5,DC Fast Charge,Public,24/7
+1131,ChargeCo,Nairobi Kenyatta University,1.1449,36.9056,Fast,4,Type 2,Restricted,07:00 - 20:00
+1132,PowerGrid,Cape Town Green Point,33.9144,18.4201,Supercharger,2,DC Fast Charge,Public,06:00 - 22:00
+1133,EVNow,Durban Central,29.8587,31.0218,Fast,4,Type 2,Public,08:00 - 20:00
+1134,Electra,Kinshasa,4.4419,15.2663,Supercharger,3,DC Fast Charge,Public,24/7
+1135,VoltHub,Cairo Maadi,29.9719,31.2517,Fast,6,Type 2,Restricted,06:00 - 22:00
+1136,ChargeCo,Maputo,25.9653,32.5892,Supercharger,4,DC Fast Charge,Public,24/7
+1137,PowerGrid,Abidjan,5.3597,-4.0311,Fast,3,Type 2,Restricted,07:00 - 19:00
+1138,EVNow,Accra Labone,5.5610,-0.2063,Supercharger,5,DC Fast Charge,Public,24/7
+1139,Electra,Addis Ababa Bole,9.0358,38.7475,Fast,4,Type 1,Public,06:00 - 22:00
+1140,VoltHub,Kinshasa Gombe,4.3151,15.3073,Supercharger,2,DC Fast Charge,Public,24/7
+1141,ChargeCo,Sao Paulo Avenida Paulista,-23.5616,-46.6553,Fast,4,Type 2,Public,24/7
+1142,PowerGrid,Buenos Aires Retiro,-34.6037,-58.3816,Supercharger,3,DC Fast Charge,Public,06:00 - 22:00
+1143,EVNow,Rio de Janeiro Copacabana,-22.9714,-43.1822,Fast,5,Type 2,Restricted,07:00 - 19:00
+1144,Electra,Lima Miraflores,-12.1215,-77.0282,Supercharger,4,DC Fast Charge,Public,24/7
+1145,VoltHub,Santiago Parque Arauco,-33.4375,-70.6483,Fast,3,Type 2,Public,06:00 - 22:00
+1146,ChargeCo,Montevideo Pocitos,-34.9063,-56.1871,Supercharger,2,DC Fast Charge,Public,24/7
+1147,PowerGrid,Caracas Altamira,10.4993,-66.8808,Fast,4,Type 2,Public,08:00 - 20:00
+1148,EVNow,Bogotá Zona T,4.6097,-74.0745,Supercharger,5,DC Fast Charge,Public,24/7
+1149,Electra,Asunción Centro,-25.2637,-57.5759,Fast,3,Type 2,Restricted,07:00 - 19:00
+1150,VoltHub,Guayaquil Malecón,2.1896,-79.8893,Supercharger,4,DC Fast Charge,Public,24/7

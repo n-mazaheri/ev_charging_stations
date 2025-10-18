@@ -1,0 +1,20 @@
+[project]
+name = "ev_charging_stations"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Nasrin", email = "na.mazaheri@yahoo.com"},
+]
+dependencies = ["fastapi>=0.119.0", "uvicorn>=0.37.0", "pydantic-settings>=2.11.0", "pytest>=8.4.2", "pandas>=2.3.3", "textblob>=0.19.0", "python-dotenv>=1.1.1", "openai>=2.5.0", "requests>=2.32.5"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]

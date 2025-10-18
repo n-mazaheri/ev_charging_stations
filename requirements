@@ -1,0 +1,12 @@
+# Core dependencies
+fastapi>=0.119.0
+uvicorn>=0.37.0
+pydantic-settings>=2.11.0
+python-dotenv>=1.1.1
+pandas>=2.3.3
+textblob>=0.19.0
+openai>=2.5.0
+requests>=2.32.5
+
+# Testing
+pytest>=8.4.2
