@@ -20,10 +20,6 @@ def find_stations(filters: dict, initial_radius=20, max_radius=600, step=30) -> 
     """
     Find stations matching filters. If no results, expand search radius incrementally.
     """
-    import sqlite3
-    import math
-    from pathlib import Path
-    from ev_charging_stations.models.query_models import StationOutput
 
     DB_FILE = Path(__file__).resolve().parent.parent.parent.parent / "ev_charging.db"
 
