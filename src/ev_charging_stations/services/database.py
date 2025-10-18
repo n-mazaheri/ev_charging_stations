@@ -1,7 +1,7 @@
 import sqlite3
 from pathlib import Path
 from typing import List
-from ev_charging_stations.models.query_models import StationOutput
+from src.ev_charging_stations.models.query_models import StationOutput
 import math
 
 # Path to your DB (adjust if needed)
