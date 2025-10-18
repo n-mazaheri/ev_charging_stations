@@ -1,4 +1,4 @@
-from services.llm_extraction import parse_user_question
+from src.ev_charging_stations.services.llm_extraction import parse_user_question
 from src.ev_charging_stations.services.geocoding import geocode_city
 from src.ev_charging_stations.services.database import find_stations
 
