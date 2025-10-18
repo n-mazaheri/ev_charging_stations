@@ -2,7 +2,7 @@ import json
 import requests
 from dotenv import load_dotenv
 import os
-from models.query_models import UserQuery
+from ev_charging_stations.models.query_models import UserQuery
 import re
 
 

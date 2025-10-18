@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from pathlib import Path
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-from pipelines.query_pipeline import run_query_pipeline
+from ev_charging_stations.pipelines.query_pipeline import run_query_pipeline
 from typing import Optional
 
 

@@ -1,6 +1,6 @@
 from services.llm_extraction import parse_user_question
-from services.geocoding import geocode_city
-from services.database import find_stations
+from ev_charging_stations.services.geocoding import geocode_city
+from ev_charging_stations.services.database import find_stations
 
 def run_query_pipeline(user_question: str):
     # Step 1: Parse with LLM
