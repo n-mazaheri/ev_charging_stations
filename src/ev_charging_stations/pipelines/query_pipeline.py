@@ -17,6 +17,7 @@ def run_query_pipeline(user_question: str):
 
     # Step 4: Query database
     stations = find_stations(filter_dict)
+    print("done")
 
     # Step 5: Return results (list of StationOutput)
     return stations
