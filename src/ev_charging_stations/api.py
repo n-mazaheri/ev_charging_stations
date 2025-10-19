@@ -7,6 +7,8 @@ from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from src.ev_charging_stations.pipelines.query_pipeline import run_query_pipeline
 from typing import Optional
+from fastapi import HTTPException
+
 
 
 # -------------------------
@@ -59,6 +61,8 @@ class ResponseModel(BaseModel):
 async def process_query(query_model: QueryModel):
     """Serves the API for the frontend or external calls."""
     stations = run_query_pipeline(query_model.query)
+    if stations is None:
+        raise HTTPException(status_code=500, detail="Failed to process query. Try again later.(Open Router API KEY error.)")
     return {"model_output": [station.dict() for station in stations]}
 
 @app.get("/")

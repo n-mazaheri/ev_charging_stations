@@ -60,5 +60,5 @@ Question: {question}
         return UserQuery(**parsed)
 
     except Exception as e:
-        print("Error calling OpenRouter:", e)
-        return UserQuery()
+        print("❌ Error calling OpenRouter:", e)
+        return None  # <- return None instead of empty UserQuery
